@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .list{
+    z-index: -1;
+    position:absolute;
+    display:none;
+    left: 1100px;
+    top: 50px;
+    list-style-type: none;
+    background: orange;
+    width: 58px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    animation: up 1s;
+}
+@keyframes up{
+  from {height: 72px;}
+  to {height: 0px;}
+}
+.show{
+    z-index: -1;
+    position:absolute;
+    display:inline-block;
+    left: 1100px;
+    top: 50px;
+    list-style-type: none;
+    background: orange;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    animation: show 1s;
+}
+@keyframes show {
+  from {height: 0px;}
+  to {height: 72px;}
+}
+ul{
+  animation: show 1s;
+  overflow: hidden;
+}
+#menu{
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}   
+    </style>
+   <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.css">
+</head>
+<body class="background">
+  <h1 class="title">My Shop</h1>
+  <h4 class="note">You can buy to anything from me!</h4>
+  <button id="menu">Menu</button>
+    <div id="list" class="list">
+      <ul>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Apple</li>  
+      </ul>
+    </div>     
+    </div>  
+    <h1 id="one"></h1>
+ <div id="form-card">
+  <form action="member.html" method="get">
+  
+    <input type="username" id="username" placeholder="Username" required ><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <button value="submit" id="login">Login</button>
+</form>
+ </div>
+ <div class="footer" id="footer">
+
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-youtube"></i>
+  <i class="fa-brands fa-facebook-messenger"></i>
+  <i class="fa-solid fa-envelope"></i>
+  <i class="fa-solid fa-registered"></i>
+
+ </div>
+
+
+ <div class=""></div>
+    <script>
+      let arr=["mango","orange","apple","banana"];
+      let menu=document.getElementById("menu");
+      var ul=document.getElementById("list");
+      let li =document.createElement("li");
+      let body=document.querySelector("body");
+
+      menu.addEventListener("click",()=>{
+        console.log(123);    
+        if(ul.className=="list"){
+          ul.className="show";
+         
+        }else{
+          ul.className="list";
+        
+        }        
+        })
+       
+
+      
+        
+
+    </script>
+</body>
+</html>

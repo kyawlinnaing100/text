@@ -1,0 +1,89 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+.title{
+    text-align: center;
+    margin: 50px auto;
+    font-family: monospace;
+    font-size: 60px;
+    font-weight: bolder;
+    color: orange;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+.note{
+    text-align: center;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: bolder;
+    color: orange;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+
+.background{
+    background-color:rgba(9, 23, 30, 0.852);
+    background-repeat: no-repeat;
+    
+}
+#form-card,input{
+    border: 1.5px solid orange;
+    border-radius: 5px;
+    height: 30px;
+    text-decoration: none;
+    text-align:center;
+    
+}
+#form-card{
+    width: 400px;
+    border:2px solid orange;
+    margin: 50px auto;
+    border-radius: 5px ;
+    padding:100px auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#form-car,form{
+    padding-top: 10px;
+}
+button{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(49, 49, 240);
+    border-style: none;
+    color: white;
+    margin-left: 110px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(138, 138, 156);
+}
+#menu{
+        position:absolute;
+        top: 10px;
+        right:100px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgb(2, 2, 2);
+        width: 85px;
+        height: 30px;
+      
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top:100px;
+}
+
+i{
+    color: white;
+    width:100px;
+    font-size: 35px;
+
+}
+

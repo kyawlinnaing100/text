@@ -1,0 +1,28 @@
+body{
+    width: 1200px;
+}
+.main{
+    display: flex;
+    height:300px;
+    margin-left: 80px;
+    animation-name:bb;
+    
+}
+.card{
+    width:400px;
+    height: 250px;
+    background-color:gainsboro;
+    border: 2px solid white;
+    border-radius: 10px;
+    flex-flow: row;    
+    margin-left: 50px;
+}
+
+@keyframes bb{
+  0% {
+    left:-100px;
+  }
+  100%{
+    right:100px;
+  }
+}
